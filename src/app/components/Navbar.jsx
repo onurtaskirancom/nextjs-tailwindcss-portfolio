@@ -36,15 +36,15 @@ const Navbar = () => {
           className="text-2xl md:text-5xl text-white font-semibold"
         >
           <Image
-            className="float-left"
+            className="float-left max-sm:hidden max-md:hidden"
             src="/images/logo.png"
             width={50}
             height={50}
             alt="emre-taskiran"
           />
-          <p className="float-left">Emre Taskiran</p>
+          <p className="float-left max-sm:text-[12px]">Emre Taskiran</p>
         </Link>
-        <div className="mobile-menu block md:hidden">
+        {/* <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(true)}
@@ -60,9 +60,9 @@ const Navbar = () => {
               <XMarkIcon className="h-5 w-5" />
             </button>
           )}
-        </div>
-        <div className="menu hidden md:block md:w-auto" id="navbar">
-          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0 ">
+        </div> */}
+        <div className="menu md:block md:w-auto" id="navbar">
+          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0  max-sm:text-[12px]">
             {navLinks.map((link, index) => (
               <li key={index}>
                 <NavLink href={link.path} title={link.title} />
