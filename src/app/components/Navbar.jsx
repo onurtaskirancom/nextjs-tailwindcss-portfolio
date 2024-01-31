@@ -42,7 +42,7 @@ const Navbar = () => {
             height={50}
             alt="emre-taskiran"
           />
-          <p className="float-left max-sm:text-[16px]">Emre Taskiran</p>
+          <p className="float-left max-sm:text-[14px]">Emre Taskiran</p>
         </Link>
         {/* <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
