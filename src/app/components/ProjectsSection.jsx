@@ -43,10 +43,10 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "Mobile Application Design",
-    description: "Mobile",
+    title: "Mobile & Web Application Design",
+    description: "Mobile - Web",
     image: "/images/projects/5.png",
-    tag: ["All", "Mobile"],
+    tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -100,11 +100,11 @@ const ProjectsSection = () => {
           name="Web"
           isSelected={tag === 'Web'}
         />
-        <ProjectTag
+        {/* <ProjectTag
           onClick={handleTagChange}
           name="Mobile"
           isSelected={tag === 'Mobile'}
-        />
+        /> */}
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
